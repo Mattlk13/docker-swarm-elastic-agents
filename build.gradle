@@ -54,7 +54,7 @@ java {
 
 ext {
     deps = [
-        gocdPluginApi: 'cd.go.plugin:go-plugin-api:25.2.0',
+        gocdPluginApi: 'cd.go.plugin:go-plugin-api:25.3.0',
         mockito      : 'org.mockito:mockito-core:5.18.0',
     ]
 
@@ -84,10 +84,10 @@ dependencies {
     implementation group: 'joda-time', name: 'joda-time', version: '2.14.0'
     implementation group: 'org.freemarker', name: 'freemarker', version: '2.3.34'
     constraints {
-        implementation('commons-io:commons-io:2.19.0') {
+        implementation('commons-io:commons-io:2.20.0') {
             because 'spotify docker-client uses an outdated version'
         }
-        implementation('org.apache.commons:commons-compress:1.27.1') {
+        implementation('org.apache.commons:commons-compress:1.28.0') {
             because 'spotify docker-client uses an outdated version'
         }
         implementation('org.apache.commons:commons-lang3:3.18.0') {
@@ -111,7 +111,7 @@ dependencies {
     implementation(platform('com.fasterxml.jackson:jackson-bom:2.19.2')) // because 'spotify docker-client uses an outdated version'
 
     testImplementation project.deps.gocdPluginApi
-    testImplementation platform('org.junit:junit-bom:5.13.2')
+    testImplementation platform('org.junit:junit-bom:5.13.4')
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params'
     testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
