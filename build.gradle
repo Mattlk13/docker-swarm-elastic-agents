@@ -87,7 +87,7 @@ dependencies {
         implementation('commons-io:commons-io:2.19.0') {
             because 'spotify docker-client uses an outdated version'
         }
-        implementation('org.apache.commons:commons-compress:1.27.1') {
+        implementation('org.apache.commons:commons-compress:1.28.0') {
             because 'spotify docker-client uses an outdated version'
         }
         implementation('org.apache.commons:commons-lang3:3.18.0') {
